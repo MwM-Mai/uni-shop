@@ -1,5 +1,9 @@
 <template>
   <view>
+    <!-- 搜索框 实现吸顶效果 需要给自定义组件添加应该父盒子-->
+    <view class="search-box">
+      <my-search @click.native="gotoSearch"></my-search>
+    </view>
     <!-- 轮播图的区域 -->
     <swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" :circular="true">
       <swiper-item v-for="(item, index) in swiperList" :key="index">
@@ -112,6 +116,13 @@
             url: "/pages/cate/cate"
           })
         }
+      },
+      
+      // 点击搜索框跳转搜索页面
+      gotoSearch() {
+        uni.navigateTo({
+          url: "/subpkg/search/search"
+        })
       }
     }
   }
@@ -151,5 +162,14 @@ swiper{
 .floor-img-box {
   display: flex;
   padding-left: 10rpx;
+}
+
+.search-box {
+  // 固定定位 设置定位为吸顶效果
+  position: sticky;
+  // 吸顶位置 顶部
+  top: 0;
+  // 提高层级 层级为最上层 9999
+  z-index: 9999;
 }
 </style>

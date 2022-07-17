@@ -1,5 +1,7 @@
 <template>
   <view>
+    <!-- 使用自定义的搜索组件 -->
+    <my-search :bgColor="'#C00000'" :redius="18" @click.native="gotoSearch"></my-search>
     <view class="scroll-view-container">
       <!-- 左侧滑动区域 -->
       <scroll-view scroll-y="true" class="letf-scroll-view" :style="{height: wh + 'px'}">
@@ -46,10 +48,15 @@
         scrollTop: 0
       };
     },
+    
+    props: {
+      
+    },
+    
     onLoad() {
       // uni.getSystemInfoSync() 获取当前设备的方法（同步）
       const sysInfo = uni.getSystemInfoSync()
-      this.wh = sysInfo.windowHeight
+      this.wh = sysInfo.windowHeight - 50
       this.getCateList()
     },
     methods: {
@@ -86,6 +93,13 @@
       gotoGoosList(item) {
         uni.navigateTo({
           url:'/subpkg/goos_list/goos_list?cid=' + item.cat_id
+        })
+      },
+      
+      // 点击搜索框跳转搜索页面
+      gotoSearch() {
+        uni.navigateTo({
+          url: "/subpkg/search/search"
         })
       }
     }

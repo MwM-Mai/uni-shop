@@ -10,7 +10,7 @@
       "list": [
         {
           "name": "",
-          "pathName": "pages/cate/cate",
+          "pathName": "subpkg/search/search",
           "query": "",
           "launchMode": "default",
           "scene": null
