@@ -10,8 +10,8 @@
       "list": [
         {
           "name": "",
-          "pathName": "subpkg/search/search",
-          "query": "",
+          "pathName": "subpkg/goos_list/goos_list",
+          "query": "cid=5",
           "launchMode": "default",
           "scene": null
         }

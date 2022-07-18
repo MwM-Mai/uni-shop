@@ -2,17 +2,17 @@
   <view>
     <!-- 搜索框 -->
     <view class="search-box">
-      <uni-search-bar :radius="100" @input="input" cancelButton="none"></uni-search-bar>
+      <uni-search-bar :radius="100" @input="input" cancelButton="none" :value="value"></uni-search-bar>
     </view>
     <!-- 搜索数据 -->
-    <view class="sugg-list" v-show="kw !== ''">
+    <view class="sugg-list" v-if="searchResults.length !== 0">
       <view class="sugg-item" v-for="(item, index) in searchResults" :key="index">
         <view class="goods-name" @click="gotoDetail(item)">{{item.goods_name}}</view>
         <uni-icons type="forward" size="16"></uni-icons>
       </view>
     </view>
     <!-- 搜索历史 -->
-    <view class="history-box" v-show="kw === ''">
+    <view class="history-box" v-else>
       <!-- 标题 -->
       <view class="history-title">
         <text>搜索历史</text>
@@ -39,6 +39,8 @@
         searchResults: [],
         // 搜索历史的数据
         histroyList: [], 
+        // 点击搜索历史某项的value
+        value: ''
       };
     },
     
@@ -74,6 +76,8 @@
         
         // 获取关键词搜索建议的数据后 保存关键词到历史数据中 最新数据在前面
         this.saveSearchHistory()
+        
+        
       },
       
       
@@ -129,7 +133,9 @@
       bindClick(item) {
         console.log(item);
         this.kw = item
+        this.value = item 
         this.getSearchList()
+
       }
     },
     
