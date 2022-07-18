@@ -30,10 +30,11 @@
       "outputPath": ""
     },
     "disableUseStrict": false,
-    "useCompilerPlugins": false
+    "useCompilerPlugins": false,
+    "minifyWXML": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.25.1",
+  "libVersion": "2.25.0",
   "appid": "wx17f337cbd8fc9702",
   "projectname": "uni-project",
   "condition": {
