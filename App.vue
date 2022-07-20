@@ -25,6 +25,7 @@
 
 	/* #endif */
 	.example-info {
+    display: block;  // 购物车的结算模块和tabbar模块不会有分割线
 		font-size: 14px;
 		color: #333;
 		padding: 10px;
