@@ -10,8 +10,8 @@
       "list": [
         {
           "name": "",
-          "pathName": "subpkg/goos_detail/goos_detail",
-          "query": "goods_id=935",
+          "pathName": "pages/cart/cart",
+          "query": "",
           "launchMode": "default",
           "scene": null
         }
