@@ -33,7 +33,7 @@
     "useCompilerPlugins": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.25.0",
+  "libVersion": "2.25.1",
   "appid": "wx17f337cbd8fc9702",
   "projectname": "uni-project",
   "condition": {

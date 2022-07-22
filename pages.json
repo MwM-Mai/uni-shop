@@ -26,7 +26,8 @@
       "navigationBarTitleText": "黑马优购",
       "enablePullDownRefresh": false
     }
-  }],
+  }
+    ],
   "tabBar": {
     "selectedColor": "#C00000",
     "list": [
