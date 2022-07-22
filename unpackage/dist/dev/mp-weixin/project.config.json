@@ -1,41 +1,19 @@
 {
-  "description": "项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "description": "项目配置文件。",
   "packOptions": {
-    "ignore": [],
-    "include": []
+    "ignore": []
   },
   "setting": {
     "urlCheck": true,
     "es6": true,
     "postcss": true,
     "minified": true,
-    "checkSiteMap": false,
-    "coverView": true,
-    "lazyloadPlaceholderEnable": false,
-    "preloadBackgroundData": false,
-    "autoAudits": false,
-    "uglifyFileName": false,
-    "uploadWithSourceMap": true,
-    "enhance": true,
-    "showShadowRootInWxmlPanel": true,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true,
-    "useStaticServer": true,
-    "showES6CompileOption": false,
-    "checkInvalidKey": true,
-    "babelSetting": {
-      "ignore": [],
-      "disablePlugins": [],
-      "outputPath": ""
-    },
-    "disableUseStrict": false,
-    "useCompilerPlugins": false
+    "checkSiteMap": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.25.1",
+  "libVersion": "",
   "appid": "wx17f337cbd8fc9702",
-  "projectname": "uni-project",
+  "projectname": "优易麦",
   "condition": {
     "search": {
       "current": -1,
@@ -53,9 +31,5 @@
       "current": -1,
       "list": []
     }
-  },
-  "editorSetting": {
-    "tabIndent": "insertSpaces",
-    "tabSize": 2
   }
 }

@@ -1,5 +1,5 @@
 {
-    "name" : "uni-project",
+    "name" : "优易麦",
     "appid" : "__UNI__1583CF9",
     "description" : "",
     "versionName" : "1.0.0",
@@ -43,16 +43,16 @@
     "quickapp" : {},
     /* 快应用特有相关 */
     "mp-weixin" : {
-        /* 小程序特有相关 */
         "appid" : "wx17f337cbd8fc9702",
         "setting" : {
             "urlCheck" : true,
             "es6" : true,
             "postcss" : true,
             "minified" : true,
-            "checkSiteMap": false
+            "checkSiteMap" : false
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "lazyCodeLoading": "requiredComponents"
     },
     "vueVersion" : "2"
 }
